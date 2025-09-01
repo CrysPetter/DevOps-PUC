@@ -1,0 +1,13 @@
+name: Continuous Delivery
+on:
+  push:
+    branches:
+      - main # ou qualquer outra filial
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Check out repository code
+       uses: actions/checkout@v4
+
