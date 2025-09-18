@@ -41,7 +41,13 @@ docker:
     - uses: actions/checkout@v4
     - name: Run Discord Webhook
       uses: johnnyhuy/actions-discord-git-webhook@main
+    - name: Discord Commits
+      uses: Snidd1/discord-commits@v1.6
       with:
         webhook_url: ${{ secrets.DISCORD_WEBHOOK_CRYSPETTER }}
+        webhook: ${{ secrets.DISCORD_WEBHOOK_CRYSPETTER }}
+        template: "avatar-with-link"
+        include-extras: true
+
 
 
