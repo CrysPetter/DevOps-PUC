@@ -12,4 +12,4 @@ async def read_root():
 # acesso http://127.0.0.1:8000/item1
 @app.get("/item1")
 async def read_item():
-    return {"item1": "Deu Certo"}
+    return {"item1": "Deu Certo No GitHub"}
